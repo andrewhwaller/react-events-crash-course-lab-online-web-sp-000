@@ -8,6 +8,9 @@ export default class ChromeBoisDomain extends Component {
     drawChromeBoiAtCoords(event.clientX, event.clientY)
   }
 
+  canvas.addEventListener('click', function(event) {
+    toggleCycling()
+  });
   /* TODO: Create an event handler which, when fired, invokes the provided
    * `toggleCycling` function with no arguments. Don't forget the click event
    * listener that should fire it!
